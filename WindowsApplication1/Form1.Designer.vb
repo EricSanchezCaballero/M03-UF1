@@ -25,10 +25,12 @@ Partial Class Form1
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.DIVBUT = New System.Windows.Forms.Button()
+        Me.MultBUT = New System.Windows.Forms.Button()
         Me.RestarBTN = New System.Windows.Forms.Button()
         Me.SumaBTN = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -54,6 +56,40 @@ Partial Class Form1
         Me.Label1.Size = New System.Drawing.Size(25, 13)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "      "
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("XG pixo", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Orange
+        Me.Label2.Location = New System.Drawing.Point(12, 20)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(199, 26)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "Calculadora"
+        '
+        'DIVBUT
+        '
+        Me.DIVBUT.Font = New System.Drawing.Font("Notram", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DIVBUT.Image = Global.WindowsApplication1.My.Resources.Resources._3
+        Me.DIVBUT.Location = New System.Drawing.Point(144, 200)
+        Me.DIVBUT.Name = "DIVBUT"
+        Me.DIVBUT.Size = New System.Drawing.Size(124, 26)
+        Me.DIVBUT.TabIndex = 8
+        Me.DIVBUT.Text = "Dividir"
+        Me.DIVBUT.UseVisualStyleBackColor = True
+        '
+        'MultBUT
+        '
+        Me.MultBUT.Font = New System.Drawing.Font("Notram", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MultBUT.ForeColor = System.Drawing.Color.Black
+        Me.MultBUT.Image = Global.WindowsApplication1.My.Resources.Resources._4
+        Me.MultBUT.Location = New System.Drawing.Point(144, 232)
+        Me.MultBUT.Name = "MultBUT"
+        Me.MultBUT.Size = New System.Drawing.Size(124, 26)
+        Me.MultBUT.TabIndex = 7
+        Me.MultBUT.Text = "Multiplicar"
+        Me.MultBUT.UseVisualStyleBackColor = True
         '
         'RestarBTN
         '
@@ -88,22 +124,13 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("XG pixo", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Orange
-        Me.Label2.Location = New System.Drawing.Point(12, 20)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(199, 26)
-        Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Calculadora"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(410, 270)
+        Me.Controls.Add(Me.DIVBUT)
+        Me.Controls.Add(Me.MultBUT)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.RestarBTN)
         Me.Controls.Add(Me.Label1)
@@ -112,7 +139,7 @@ Partial Class Form1
         Me.Controls.Add(Me.SumaBTN)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "v"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -126,4 +153,6 @@ Partial Class Form1
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents RestarBTN As Button
     Friend WithEvents Label2 As Label
+    Friend WithEvents MultBUT As Button
+    Friend WithEvents DIVBUT As Button
 End Class

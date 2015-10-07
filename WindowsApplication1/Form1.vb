@@ -29,4 +29,27 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub MultBUT_Click(sender As Object, e As EventArgs) Handles MultBUT.Click
+
+        op1 = CInt(TextBox1.Text)
+        op2 = CInt(TextBox2.Text)
+
+        resultado = op1 * op2
+
+        Label1.Text = resultado.ToString()
+
+
+    End Sub
+
+    Private Sub DIVBUT_Click(sender As Object, e As EventArgs) Handles DIVBUT.Click
+
+        op1 = CInt(TextBox1.Text)
+        op2 = CInt(TextBox2.Text)
+
+        resultado = op1 / op2
+
+        Label1.Text = resultado.ToString()
+
+    End Sub
 End Class
